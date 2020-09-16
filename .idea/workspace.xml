@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cedd6f49-f581-4326-96db-49afcdaa3cb8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1hRcrKmsk23wQiGwSb1wsqVmlnt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cedd6f49-f581-4326-96db-49afcdaa3cb8" name="Default Changelist" comment="" />
+      <created>1599977544815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599977544815</updated>
+      <workItem from="1599977546494" duration="6343000" />
+      <workItem from="1600071775951" duration="4231000" />
+      <workItem from="1600078710407" duration="50000" />
+      <workItem from="1600102973498" duration="2838000" />
+      <workItem from="1600156625880" duration="7000" />
+      <workItem from="1600241163502" duration="3634000" />
+      <workItem from="1600263783688" duration="1121000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3300" y="261" key="FileChooserDialogImpl" timestamp="1600078748333">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3300" y="261" key="FileChooserDialogImpl/2560.0.1920.1040/0.0.2560.1400@2560.0.1920.1040" timestamp="1600078748333" />
+  </component>
+</project>
