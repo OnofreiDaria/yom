@@ -312,6 +312,7 @@ template {
  */
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 [hidden] {
   display: none;
@@ -329,6 +330,7 @@ body {
 }
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .justify-between {
   justify-content: space-between;
@@ -394,9 +396,10 @@ nav {
   -webkit-text-stroke-color: black;
 }
 .nav_ul {
+  width: 100%;
   list-style: none;
   font-size: 1.75rem;
-  min-width: 800px;
+  max-width: 800px;
   justify-content: space-between;
 }
 .nav_ul a {
@@ -435,11 +438,17 @@ nav {
   }
 }
 /* HOME SECTION */
-#home {
+.display_mob {
+  display: none;
+}
+.bg {
   min-height: 100vh;
-  padding: 3rem 0;
-  background: url("images/home-bg.jpg") no-repeat top;
   background-size: cover;
+  padding: 3rem 0;
+}
+#home {
+  overflow-x: hidden;
+  background: url("images/home-bg.jpg") no-repeat top;
 }
 h1 {
   position: relative;
@@ -470,21 +479,14 @@ h1 .h1_big:after {
 }
 /* TEAM */
 #team {
-  /*width: 100%;*/
-  min-height: 100vh;
-  padding: 3rem 0;
   background: url("images/team_bg.jpg") no-repeat top right;
-  background-size: cover;
 }
 
 /* CONTACTS */
 #contacts {
   display: flex;
   align-items: flex-end;
-  min-height: 100vh;
-  padding: 3rem 0;
   background: url("images/contacts_bg.jpg") no-repeat;
-  background-size: cover;
 }
 
 .soc-link {
@@ -504,4 +506,66 @@ h1 .h1_big:after {
 }
 .contacts svg {
   margin-top: 11px;
+}
+
+@media all and (max-width: 1440px) {
+  html  {
+    font-size: 85%;
+  }
+  .w-50 {
+    width: 65% ;
+  }
+}
+@media all and (max-width: 991px) {
+  html {
+    font-size: 75%;
+  }
+  .brand-link {
+    -webkit-text-stroke-width: 3px;
+  }
+  .nav_ul {
+    max-width: 450px;
+  }
+  .nav_ul {
+    font-size: 1.5rem;
+  }
+  #home .w-25 {
+    width: 100%;
+    background-color: #fff;
+  }
+  .w-50 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  #home {
+    background: url("images/home_bg_mob.jpg") no-repeat 39% 18%;
+    display: flex;
+    flex-direction: column;
+  }
+  p.lead.text-right {
+    text-align: left;
+    margin-top: auto;
+  }
+  .display_mob {
+    display: block;
+  }
+  .brand-link {
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+  .color-red_mob {
+    color: #c40004 ;
+  }
+  .h1_big {
+    font-size: 7rem;
+    margin-top: 2rem;
+    display: block;
+  }
+  p {
+    background: transparent;
+  }
 }
