@@ -407,7 +407,7 @@ nav {
   text-transform: uppercase;
   font-weight: 600;
   padding: 5px 15px;
-  transition: all .4s;
+  transition: color .4s;
 }
 .nav_ul a:hover,
 .nav_ul a:active,
@@ -437,18 +437,29 @@ nav {
         1px 1px 0 #000000;
   }
 }
-/* HOME SECTION */
-.display_mob {
-  display: none;
+/* BACKGROUND */
+.bg-home {
+  background: url("images/home-bg.jpg") no-repeat top;
+}
+.bg-team {
+  background: url("images/team_bg.jpg") no-repeat top right;
+}
+.bg-contacts {
+  background: url("images/contacts_bg.jpg") no-repeat;
 }
 .bg {
   min-height: 100vh;
   background-size: cover;
   padding: 3rem 0;
 }
+
+/* HOME SECTION */
+.display_mob {
+  display: none;
+}
+
 #home {
   overflow-x: hidden;
-  background: url("images/home-bg.jpg") no-repeat top;
 }
 h1 {
   position: relative;
@@ -477,16 +488,10 @@ h1 .h1_big:after {
   right: -250px;
   bottom: -30px;
 }
-/* TEAM */
-#team {
-  background: url("images/team_bg.jpg") no-repeat top right;
-}
-
 /* CONTACTS */
 #contacts {
   display: flex;
   align-items: flex-end;
-  background: url("images/contacts_bg.jpg") no-repeat;
 }
 
 .soc-link {
@@ -497,6 +502,7 @@ h1 .h1_big:after {
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 0;
+  transition: background-color .5s;
 }
 .soc-link:hover {
   background-color: #c40004;
@@ -506,6 +512,9 @@ h1 .h1_big:after {
 }
 .contacts svg {
   margin-top: 11px;
+}
+.mx-3 {
+  margin: 0 15px;
 }
 
 @media all and (max-width: 1440px) {
@@ -542,9 +551,20 @@ h1 .h1_big:after {
     display: none;
   }
   #home {
-    background: url("images/home_bg_mob.jpg") no-repeat 39% 18%;
     display: flex;
     flex-direction: column;
+  }
+  .bg-home {
+    background: url("images/home_bg_mob.jpg") no-repeat;
+  }
+  .bg-team {
+    background: url("images/bg_team_mob.jpg") no-repeat;
+  }
+  .bg-contacts {
+    background: url("images/bg_contacts_mob.jpg") no-repeat;
+  }
+  .bg {
+    background-size: cover;
   }
   p.lead.text-right {
     text-align: left;
@@ -560,12 +580,117 @@ h1 .h1_big:after {
   .color-red_mob {
     color: #c40004 ;
   }
+  h1 {
+    margin-top: 6%;
+    margin-bottom: -1%;
+  }
   .h1_big {
     font-size: 7rem;
     margin-top: 2rem;
     display: block;
   }
-  p {
+  #home .w-25 {
     background: transparent;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #home .justify-between {
+    flex: 1;
+  }
+  h1 .h1_big:before,
+  h1 .h1_big:after {
+    content: none;
+  }
+  .bg {
+    min-height: 110vh;
+  }
+  #team {
+    display: flex;
+  }
+  #team .brand-link {
+    display: none;
+  }
+  #team h2 {
+    margin-top: 28%;
+  }
+  #team .h1_big {
+    text-transform: uppercase;
+  }
+  #team .w-50 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  #team .container {
+    flex: 1;
+  }
+
+  #contacts .h1_big {
+    font-size: 10.25rem;
+    display: inline-block;
+  }
+
+  .fz-big_mob {
+    font-size: 7rem;
+  }
+  #contacts h2 {
+    font-size: 5.85rem;
+
+  }
+  #contacts .lead {
+    text-align: justify;
+  }
+  .p-contacts {
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+  }
+  .contacts {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .h1_big {
+    font-size: 5rem;
+    margin-top: 0;
+  }
+
+  #contacts h2,
+  h2 {
+    font-size: 5rem;
+  }
+  .fz-big_mob {
+    font-size: 6rem;
+  }
+  #contacts .h1_big {
+    font-size: 8.7rem;
+  }
+
+}
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  .h1_big {
+    font-size: 4.5rem;
+  }
+
+  #contacts h2,
+  h2 {
+    font-size: 4rem;
+  }
+  .fz-big_mob {
+    font-size: 5rem;
+  }
+  #contacts .h1_big {
+    font-size: 7rem;
+  }
+  .p-contacts {
+    flex-direction: column;
   }
 }
