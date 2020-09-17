@@ -688,9 +688,24 @@ h1 .h1_big:after {
     font-size: 5rem;
   }
   #contacts .h1_big {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .p-contacts {
     flex-direction: column;
+  }
+  #contacts .float-right {
+    float: none;
+  }
+  #contacts .text-right {
+    text-align: center;
+  }
+  #contacts h2 {
+    margin-top: 10rem;
+  }
+  .container {
+    padding:0 1rem;
+  }
+  .lead {
+    font-size: 1.5rem;
   }
 }
