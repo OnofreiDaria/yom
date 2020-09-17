@@ -374,6 +374,7 @@ h2 {
 .lead {
   font-size: 2rem;
   color: #151515;
+  background-color: rgba(255, 255, 255, .5);
 }
 .fw-600 {
   font-weight: 600;
@@ -540,7 +541,6 @@ h1 .h1_big:after {
   }
   #home .w-25 {
     width: 100%;
-    background-color: #fff;
   }
   .w-50 {
     width: 100%;
@@ -590,7 +590,6 @@ h1 .h1_big:after {
     display: block;
   }
   #home .w-25 {
-    background: transparent;
     text-align: center;
     margin-bottom: 0;
   }
@@ -692,6 +691,10 @@ h1 .h1_big:after {
   }
   .p-contacts {
     flex-direction: column;
+  }
+  .p-contacts .lead {
+    font-size: 2rem;
+    font-weight: 800;
   }
   #contacts .float-right {
     float: none;
