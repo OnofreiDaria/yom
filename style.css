@@ -555,13 +555,13 @@ h1 .h1_big:after {
     flex-direction: column;
   }
   .bg-home {
-    background: url("images/home_bg_mob.jpg") no-repeat;
+    background: url("images/mob1.jpg") no-repeat;
   }
   .bg-team {
     background: url("images/bg_team_mob.jpg") no-repeat;
   }
   .bg-contacts {
-    background: url("images/bg_contacts_mob.jpg") no-repeat;
+    background: url("images/mob3.jpg") no-repeat;
   }
   .bg {
     background-size: cover;
